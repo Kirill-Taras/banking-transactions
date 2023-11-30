@@ -1,7 +1,12 @@
 from datetime import datetime
 
 
-def times_of_day():
+def times_of_day() -> str:
+    """
+    Функция возвращает приветственный текст,
+    в зависимости от времени суток.
+    :return: Приветствие.
+    """
     current_datetime = datetime.now()
     if 6 <= current_datetime.hour < 12:
         welcome_text = "Доброе утро"
