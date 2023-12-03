@@ -13,6 +13,8 @@ openpyxl = "^3.1.2"
 xlrd = "^2.0.1"
 requests = "^2.31.0"
 python-dotenv = "^1.0.0"
+pandas-stubs = "^2.1.1.230928"
+types-requests = "^2.31.0.10"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.1.0"
