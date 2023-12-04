@@ -1,11 +1,8 @@
 import json
-from pathlib import Path
 
+from src.config import FILE_OPERATIONS, FILE_USER_SETTINGS
 from src.utils import times_of_day
 from src.views import get_currency_rate, get_dict_card, get_stocks_rate, get_top_transactions
-
-FILE_OPERATIONS = Path.joinpath(Path(__file__).parent.parent, "data", "operations.xls")
-FILE_USER_SETTINGS = Path.joinpath(Path(__file__).parent.parent, "user_settings.json")
 
 
 def main() -> str:
@@ -24,4 +21,4 @@ def main() -> str:
 
 
 if __name__ == "__main__":
-    print(type(main()))
+    print(main())
