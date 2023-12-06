@@ -7,7 +7,7 @@ from src.views import (get_currency_rate, get_dict_card, get_file_xls, get_stock
 
 def test_get_file_xls():
     assert get_file_xls(FILE_OPERATIONS).loc[0, "Номер карты"] == "*7197"
-    assert get_file_xls("user_settings.json") == None
+    assert get_file_xls("user_settings.xls") == None
 
 
 def test_get_time_interval():
