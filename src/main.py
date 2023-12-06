@@ -1,4 +1,5 @@
 import json
+from typing import Dict, Any
 
 from src.config import FILE_OPERATIONS, FILE_USER_SETTINGS
 from src.utils import times_of_day
@@ -11,7 +12,7 @@ def main() -> str:
     :return: json-ответ.
     """
     user_date = input("Введите дату в формате YYYY-MM-DD: ")
-    json_answer = dict()
+    json_answer: Dict[str | Any] = dict()
     json_answer["greeting"] = times_of_day()
     json_answer["cards"] = get_dict_card(FILE_OPERATIONS, user_date)
     json_answer["top_transactions"] = get_top_transactions(FILE_OPERATIONS, user_date)
